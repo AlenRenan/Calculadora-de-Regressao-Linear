@@ -8,10 +8,9 @@ import (
 
 func main() {
 
-	fmt.Print("\nInsira o valor de n: ") //msg
-	var n int                            //Iniciavaliza a variável n, y e y
-	fmt.Scanln(&n)                       //Escaneia a entrada com os valores de x
-
+	fmt.Print("\nInsira o valor de n: ") //Imprime a mensagem
+	var n int                            //Inicializa a variável n, y e y
+	fmt.Scanln(&n)                       //Escaneia a entrada com o valor de n
 	var x = make([]float64, n) //Cria um slice quer armazenará os valores de x
 	var y = make([]float64, n) //Cria um slice quer armazenará os valores de y
 
@@ -33,8 +32,6 @@ func main() {
 	/*
 		Chama a função que realiza os cálculos de Covariância
 	*/
-	calculos.CovaricanciaXeY(n, x, y)
-	//auxiliar.desvioPadraoXeY(n, x, y)
+	calculos.CovaricanciaXeY(n, x, y) //Chamada da função CovaricanciaXeY
 	fmt.Print("\n\nO programa fecha em 1 minuto !!")
-	time.Sleep(1 * time.Minute)
-}
+	time.Sleep(1 * time.Minute) //Espera 1 minuto para finalizar o programa
