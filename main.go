@@ -1,7 +1,7 @@
 package main
 
 import (
-	"auxiliar/auxiliar"
+	"calculos/calculos"
 	"fmt"
 	"time"
 )
@@ -33,7 +33,7 @@ func main() {
 	/*
 		Chama a função que realiza os cálculos de Covariância
 	*/
-	auxiliar.CovaricanciaXeY(n, x, y)
+	calculos.CovaricanciaXeY(n, x, y)
 	//auxiliar.desvioPadraoXeY(n, x, y)
 	fmt.Print("\n\nO programa fecha em 1 minuto !!")
 	time.Sleep(1 * time.Minute)

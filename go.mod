@@ -1,3 +1,3 @@
-module auxiliar
+module calculos
 
 go 1.18
