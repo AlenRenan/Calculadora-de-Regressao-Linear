@@ -35,3 +35,4 @@ func main() {
 	calculos.CovaricanciaXeY(n, x, y) //Chamada da função CovaricanciaXeY
 	fmt.Print("\n\nO programa fecha em 1 minuto !!")
 	time.Sleep(1 * time.Minute) //Espera 1 minuto para finalizar o programa
+}
